@@ -38,4 +38,16 @@ public class Secretario extends Pessoa {
 
     	return super.pessoaMaiorIdade();
     }
+
+	@Override
+	public double salario() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String TarefaSemanal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

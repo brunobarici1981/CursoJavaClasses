@@ -1,9 +1,16 @@
 package primeiro.programa.java;
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	String nome,dataNascimento,registroGeral,numeroCpf,nomeDaMae,nomeDoPai;
 	int idade;
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	double salario;
 	public String getNome() {
 		return nome;
 	}
@@ -52,9 +59,11 @@ public class Pessoa {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public boolean pessoaMaiorIdade() {
+	public boolean pessoaMaiorIdade(){
 		return idade >= 18;
 	}
-
+	public abstract double salario();
+	public abstract String TarefaSemanal();
+    
 }
 

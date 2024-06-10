@@ -37,4 +37,16 @@ public String toString() {
 		
 		return super.pessoaMaiorIdade();
 	}
+
+@Override
+public double salario() {
+	// TODO Auto-generated method stub
+	return 200;
+}
+
+@Override
+public String TarefaSemanal() {
+	// TODO Auto-generated method stub
+	return null;
+}
 }
