@@ -10,6 +10,22 @@ public abstract class Pessoa {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	public Pessoa(String nome, String dataNascimento, String registroGeral, String numeroCpf, String nomeDaMae,
+			String nomeDoPai, int idade, double salario) {
+		super();
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.registroGeral = registroGeral;
+		this.numeroCpf = numeroCpf;
+		this.nomeDaMae = nomeDaMae;
+		this.nomeDoPai = nomeDoPai;
+		this.idade = idade;
+		this.salario = salario;
+	}
+	 public Pessoa() {
+		// TODO Auto-generated constructor stub
+	}
+	 
 	double salario;
 	public String getNome() {
 		return nome;

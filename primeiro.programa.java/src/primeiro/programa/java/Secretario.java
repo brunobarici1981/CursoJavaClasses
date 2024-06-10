@@ -1,9 +1,40 @@
 package primeiro.programa.java;
 
-public class Secretario extends Pessoa {
+public class Secretario extends Pessoa implements PermitirAcesso {
 
-	String registro, nivelDeCargo, experiencia;
+	private String registro, nivelDeCargo, experiencia,login,senha;
+	
 
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+public Secretario() {
+		super();
+	}
+
+
+	public Secretario(String nome, String dataNascimento, String registroGeral, String numeroCpf, String nomeDaMae,
+			String nomeDoPai, int idade, double salario, String registro, String nivelDeCargo, String experiencia) {
+		super(nome, dataNascimento, registroGeral, numeroCpf, nomeDaMae, nomeDoPai, idade, salario);
+		this.registro = registro;
+		this.nivelDeCargo = nivelDeCargo;
+		this.experiencia = experiencia;
+	}
+
+	
 	public String getRegistro() {
 		return registro;
 	}
@@ -49,5 +80,11 @@ public class Secretario extends Pessoa {
 	public String TarefaSemanal() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public boolean autenticar(String login,String senha) {
+		
+		return login.equals("admin")&&senha.equals("admin");
 	}
 }

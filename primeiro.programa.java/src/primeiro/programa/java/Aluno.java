@@ -3,8 +3,19 @@ package primeiro.programa.java;
 
 public class Aluno extends Pessoa {
 	
+
 	String dataDaMatricula,nomeDaEscola,serieMatriculado,disciplinas;
 	
+	public Aluno(String nome, String dataNascimento, String registroGeral, String numeroCpf, String nomeDaMae,
+			String nomeDoPai, int idade, double salario, String dataDaMatricula, String nomeDaEscola,
+			String serieMatriculado, String disciplinas) {
+		super(nome, dataNascimento, registroGeral, numeroCpf, nomeDaMae, nomeDoPai, idade, salario);
+		this.dataDaMatricula = dataDaMatricula;
+		this.nomeDaEscola = nomeDaEscola;
+		this.serieMatriculado = serieMatriculado;
+		this.disciplinas = disciplinas;
+	}
+
 	@Override
 	public String toString() {
 		return "Aluno [dataDaMatricula=" + dataDaMatricula + ", nomeDaEscola=" + nomeDaEscola + ", serieMatriculado="
