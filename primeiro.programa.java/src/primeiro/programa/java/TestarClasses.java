@@ -11,7 +11,8 @@ import primeiro.programa.java.Pessoa;
 public class TestarClasses {
 
 	public static void main(String[] args) {
-
+        
+		try{
 		if (new Secretario().autenticar(JOptionPane.showInputDialog("Digite seu login"),
 				JOptionPane.showInputDialog("Digite sua senha")))
 
@@ -19,6 +20,11 @@ public class TestarClasses {
 		else {
 			JOptionPane.showMessageDialog(null, "Nao permitido acesso");
 
+		}
+		}catch(Exception e) {
+			JOptionPane.showInternalMessageDialog(null, e.getClass());	
+		}finally {
+			
 		}
 		 StringBuilder nome = new StringBuilder();
 		nome.append("bruno ");

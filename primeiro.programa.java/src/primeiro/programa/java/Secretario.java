@@ -81,10 +81,11 @@ public Secretario() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+   
 	@Override
 	public boolean autenticar(String login,String senha) {
 		
 		return login.equals("admin")&&senha.equals("admin");
 	}
+    
 }
